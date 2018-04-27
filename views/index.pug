@@ -1,0 +1,28 @@
+html
+    head
+        title= title
+        link(rel='stylesheet', href='/stylesheet/style.css')
+    body
+        h1 Hello
+        p Welcome to #{title}
+
+
+         form(id="myForm", method="post", action="/users/create")
+
+        label(form="name") Name
+
+        input(type="text", id="name", name="name")
+    <br>
+
+        label(form="email") Email
+
+        input(type="email", id="email", name="email")
+    <br>
+
+        label(form="age") -Age-
+
+        input(type="age", id="age", name="age")
+    <br>
+        input(type="submit", value="Add User")
+
+

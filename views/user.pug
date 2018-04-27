@@ -1,0 +1,13 @@
+doctype html
+html
+    head
+        title user
+    body
+
+       p #{user.id}
+       p #{user.name}
+       p #{user.email}
+       p #{user.age}
+
+    a(href='/edit' + user.id) edit
+    a(href='/delete' + user.id) delete
